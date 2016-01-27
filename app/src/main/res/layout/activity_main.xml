@@ -10,7 +10,9 @@
     tools:context="com.general.android.materialdesigndemo.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_cardview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:gravity="center"
+        android:text="CardView" />
 </RelativeLayout>
