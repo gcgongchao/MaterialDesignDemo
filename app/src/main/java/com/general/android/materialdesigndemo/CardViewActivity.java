@@ -17,6 +17,11 @@ import java.util.ArrayList;
  * 一种容器使用。
  * CardView应该被使用在显示层次性的内容时，在显示列表或网格时更应该被选择，因为这些边缘可以使得用户更容易去区分
  * 这些内容。
+ * CardView提供了一个默认的elevation(意为CardView的Z轴阴影)和圆角角度，所以每一个卡片都能够在不同的设备上保持
+ * 相同的外观。当然，你也可以根据自己的需求去定制这些值。
+ * 注意：cardElevation属性被用来决定阴影的大小以及柔和度，以至于可以逼真的模拟出对于深度效果的描述。
+ *
+ *
  */
 
 public class CardViewActivity extends BaseActivity{
