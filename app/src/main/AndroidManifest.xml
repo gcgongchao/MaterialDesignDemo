@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CardViewActivity"></activity>
+        <activity android:name=".TabLayoutActivity"></activity>
     </application>
 
 </manifest>
