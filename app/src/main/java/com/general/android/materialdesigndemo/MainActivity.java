@@ -12,6 +12,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
 
     private TextView mTvCardView;
     private TextView mTvTabLayout;
+    private TextView mTvAppBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     protected void initView() {
         mTvCardView=(TextView)findViewById(R.id.tv_cardview);
         mTvTabLayout=(TextView)findViewById(R.id.tv_tablayout);
+        mTvAppBar=(TextView)findViewById(R.id.tv_appbar);
     }
 
     @Override
@@ -45,6 +47,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
     protected void setListener() {
         mTvCardView.setOnClickListener(this);
         mTvTabLayout.setOnClickListener(this);
+        mTvAppBar.setOnClickListener(this);
 
     }
 
@@ -59,6 +62,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener{
                 break;
             case R.id.tv_tablayout:
                 intent=new Intent(MainActivity.this,TabLayoutActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.tv_appbar:
+                intent=new Intent(MainActivity.this,AppBarLayoutActivity.class);
                 startActivity(intent);
                 break;
         }
